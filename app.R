@@ -50,24 +50,6 @@ ui <- dashboardPage(
       tabItem(
         tabName = "dashboard",
         
-        hr(),
-        fluidRow(
-          column(
-            width = 12,
-            tags$small(
-              HTML(
-                paste0(
-                  "Citation: Baruah, Mousumi (2025). ",
-                  "<em>PIB Critical Minerals Dashboard</em>. ",
-                  "<a href='https://mousumib.shinyapps.io/pib_shiny_app/' target='_blank'>",
-                  "https://mousumib.shinyapps.io/pib_shiny_app/</a>"
-                )
-              )
-            )
-          )
-        ),
-        
-        
         # ---- KPIs ----
         fluidRow(
           valueBoxOutput("kpi_total", width = 4),
@@ -239,3 +221,4 @@ server <- function(input, output, session) {
 # Run app
 # =========================
 shinyApp(ui = ui, server = server)
+
