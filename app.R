@@ -49,7 +49,8 @@ ui <- dashboardPage(
     tabItems(
       tabItem(
         tabName = "dashboard",
-                hr(),
+        
+        hr(),
         fluidRow(
           column(
             width = 12,
@@ -65,7 +66,7 @@ ui <- dashboardPage(
             )
           )
         ),
-
+        
         
         # ---- KPIs ----
         fluidRow(
@@ -238,5 +239,3 @@ server <- function(input, output, session) {
 # Run app
 # =========================
 shinyApp(ui = ui, server = server)
-
-
